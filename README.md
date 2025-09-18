@@ -74,7 +74,7 @@ Examples:
 -- Show first 10 customers
 SELECT * FROM customer LIMIT 10;
 ```
-(./query_actor.png)
+![result](./query_actor.png)
 
 ``` sql
 -- Rentals in 2006, sorted by date
