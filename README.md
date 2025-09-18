@@ -1,4 +1,4 @@
-# CineAnalytics 🎬
+# CineAnalytics
 
 ## Company Overview
 **CineAnalytics** is an analytics company focused on the movie rental business.  
@@ -16,13 +16,6 @@ The analytics includes:
 - Rental frequency by category  
 - Average payments and sales per region  
 - Comparative KPIs  
-
----
-
-## Screenshots
-Example of analytics dashboard in Superset:  
-
-![Dashboard Screenshot](images/dashboard.png)  
 
 ---
 
@@ -110,11 +103,24 @@ ORDER BY film_count DESC;
 ![result](./countcategory.png)
 ![result](./countcategory_analytics.png)
 
-### Repository Contents
-├── queries.sql        # SQL queries with comments
-├── README.md          # Project documentation
-├── images/            # Screenshots for README and report
-└── superset_config.py # Superset configuration (SECRET_KEY etc.)
+
+### Database Schema (ERD)
+Pagila database schema used in this project:  
+
+![ERD](./pagila-schema-diagram.png)
+
+
+
+### Repository Structure
+├── queries.sql              # SQL queries with comments  
+├── README.md                # Documentation  
+├── pagila-schema-diagram.png # ERD diagram of Pagila DB  
+├── query_actor.png          # Example query result  
+├── where+orderby.png        # Example query result  
+├── groupby.png              # Aggregation query result  
+├── countcategory.png        # Pie chart query result  
+├── countcategory_analytics.png # Superset visualization  
+
 
 
 ### Tools & Resources
