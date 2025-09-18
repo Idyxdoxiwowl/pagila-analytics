@@ -53,6 +53,7 @@ superset init
 superset run -p 8088
 ```
 It will look something like this
+
 ![result](./db_terminal.png)
 ![result](./superset_terminal.png)
 
