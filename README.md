@@ -71,16 +71,19 @@ All analytical queries are saved in queries.sql
 .
 Examples:
 ``` sql
--- Show first 10 customers
-SELECT * FROM customer LIMIT 10;
+-- Show first 10 actors
+SELECT * FROM actor LIMIT 10;
 ```
 ![result](./query_actor.png)
 
 ``` sql
--- Rentals in 2006, sorted by date
-SELECT * FROM rental
-WHERE rental_date BETWEEN '2006-01-01' AND '2006-12-31'
-ORDER BY rental_date;
+-- actors whose name starts with "A" sorted by last name
+SELECT first_name, last_name, last_update
+FROM actor
+WHERE first_name LIKE 'A%'
+ORDER BY last_name ASC;
+```
+![result](./groupby.png)
 
 -- Average payment amount per customer
 SELECT customer_id, AVG(amount) AS avg_payment
