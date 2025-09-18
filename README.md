@@ -83,12 +83,24 @@ FROM actor
 WHERE first_name LIKE 'A%'
 ORDER BY last_name ASC;
 ```
+![result](./where+orderby.png)
+
+``` sql
+-- average, minimal, maximum rental rate by category
+SELECT 
+    c.name AS category,
+    AVG(f.rental_rate) AS avg_rate,
+    MIN(f.rental_rate) AS min_rate,
+    MAX(f.rental_rate) AS max_rate
+FROM film f
+JOIN film_category fc ON f.film_id = fc.film_id
+JOIN category c ON fc.category_id = c.category_id
+GROUP BY c.name
+ORDER BY avg_rate DESC;
+
 ![result](./groupby.png)
 
--- Average payment amount per customer
-SELECT customer_id, AVG(amount) AS avg_payment
-FROM payment
-GROUP BY customer_id;
+```
 
 -- Total rentals per film category
 SELECT c.name, COUNT(r.rental_id) AS total_rentals
