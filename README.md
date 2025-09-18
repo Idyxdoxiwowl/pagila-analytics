@@ -100,18 +100,19 @@ ORDER BY avg_rate DESC;
 ```
 ![result](./groupby.png)
 
+``` sql
+--- Top 10 clients by film rent count
+SELECT 
+    c.first_name || ' ' || c.last_name AS customer,
+    COUNT(r.rental_id) AS rental_count
+FROM customer c
+JOIN rental r ON c.customer_id = r.customer_id
+GROUP BY customer
+ORDER BY rental_count DESC
+LIMIT 10;
 ```
-
--- Total rentals per film category
-SELECT c.name, COUNT(r.rental_id) AS total_rentals
-FROM category c
-JOIN film_category fc ON c.category_id = fc.category_id
-JOIN film f ON fc.film_id = f.film_id
-JOIN inventory i ON f.film_id = i.film_id
-JOIN rental r ON i.inventory_id = r.inventory_id
-GROUP BY c.name
-ORDER BY total_rentals DESC;
-```
+![result](./countcategory.png)
+![result](./countcategory_analitycs.png)
 
 ### Repository Contents
 ├── queries.sql        # SQL queries with comments
