@@ -125,6 +125,34 @@ Pagila database schema used in this project:
 ![ERD](./pagila-schema-diagram.png)
 
 
+## Python Script (main.py)
+We created a Python script to connect to the **Pagila** PostgreSQL database, run SQL queries, and print results.
+
+### Example output
+The script executes queries such as:
+- Top 10 actors (`SELECT * FROM actor LIMIT 10`)
+- Top 10 most active customers by rentals
+
+Console output:
+![result](./c.png)
+
+### How to run
+
+1. Activate your virtual environment:
+   ```bash
+   venv\Scripts\activate    # Windows
+   ```
+2. Install requirements (if not already):
+
+```bash 
+  pip install psycopg2 pandas
+```
+3. Run the script:
+   ``` bash
+   python main.py
+4.The results will appear in the terminal and can also be saved into results.csv for further analysis.
+
+
 
 ### Repository Structure
 ├── queries.sql              # SQL queries with comments  
