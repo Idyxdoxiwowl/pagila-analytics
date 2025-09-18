@@ -108,7 +108,7 @@ GROUP BY c.name
 ORDER BY film_count DESC;
 ```
 ![result](./countcategory.png)
-![result](./countcategory_analitycs.png)
+![result](./countcategory_analytics.png)
 
 ### Repository Contents
 ├── queries.sql        # SQL queries with comments
