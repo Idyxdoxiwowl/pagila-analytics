@@ -116,8 +116,8 @@ GROUP BY customer
 ORDER BY total_payment DESC
 LIMIT 10;
 ```
-![result](./c.png)
-![result](./x.png)
+![result](./sixth.png)
+![result](./sixth_analytics.png)
 
 ### Database Schema (ERD)
 Pagila database schema used in this project:  
