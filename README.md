@@ -107,6 +107,17 @@ ORDER BY film_count DESC;
 ![result](./countcategory.png)
 ![result](./countcategory_analytics.png)
 
+``` sql
+---Total revenue per customer
+SELECT c.first_name || ' ' || c.last_name AS customer, SUM(p.amount) AS total_payment
+FROM customer c
+JOIN payment p ON c.customer_id = p.customer_id
+GROUP BY customer
+ORDER BY total_payment DESC
+LIMIT 10;
+```
+![result](./c.png)
+![result](./x.png)
 
 ### Database Schema (ERD)
 Pagila database schema used in this project:  
