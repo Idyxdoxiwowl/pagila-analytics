@@ -139,31 +139,31 @@ Console output:
 ### How to run
 
 1. Activate your virtual environment:
-   ```bash
+```bash
    venv\Scripts\activate    # Windows
-   
+```
 2. Install requirements (if not already):
-   ```bash 
-  pip install psycopg2 pandas
-  
-3. Run the script:
-   ``` bash
+```
+   pip install psycopg2 pandas
+```
+4. Run the script:
+ ``` bash
    python main.py
-   
+```
 4.The results will appear in the terminal and can also be saved into results.csv for further analysis.
 
 
 
 ### Repository Structure
-├── queries.sql              # SQL queries with comments  
-├── README.md                # Documentation  
-├── pagila-schema-diagram.png # ERD diagram of Pagila DB  
-├── query_actor.png          # Example query result  
-├── where+orderby.png        # Example query result  
-├── groupby.png              # Aggregation query result  
-├── countcategory.png        # Pie chart query result  
-├── countcategory_analytics.png # Superset visualization  
-
+├── queries.sql                    # SQL queries with comments  
+├── README.md                      # Documentation  
+├── pagila-schema-diagram.png      # ERD diagram of Pagila DB  
+├── query_actor.png                # Example query result  
+├── where+orderby.png              # Example query result  
+├── groupby.png                    # Aggregation query result  
+├── countcategory.png              # Pie chart query result  
+├── countcategory_analytics.png    # Superset visualization  
+├── main.py                        # Python script to run queries on PostgreSQL  
 
 
 ### Tools & Resources
