@@ -65,15 +65,18 @@ Open in browser: http://localhost:8088
 
 Login with your admin credentials.
 
-SQL Queries
+### SQL Queries
 
 All analytical queries are saved in queries.sql
 .
 Examples:
-```
+``` sql
 -- Show first 10 customers
 SELECT * FROM customer LIMIT 10;
+```
+(./query_actor.png)
 
+``` sql
 -- Rentals in 2006, sorted by date
 SELECT * FROM rental
 WHERE rental_date BETWEEN '2006-01-01' AND '2006-12-31'
