@@ -53,8 +53,8 @@ superset init
 superset run -p 8088
 ```
 It will look something like this
-![result](./c.png)
-![result](./s.png)
+![result](./db_terminal.png)
+![result](./superset_terminal.png)
 
 ### 2. Access
 Open in browser: http://localhost:8088
