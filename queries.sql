@@ -1,5 +1,10 @@
--- 1. Show first 10 actors
-SELECT * FROM actor LIMIT 10;
+---1. Top 10 actors by number of films
+SELECT a.first_name || ' ' || a.last_name AS actor, COUNT(fa.film_id) AS film_count
+FROM actor a
+JOIN film_actor fa ON a.actor_id = fa.actor_id
+GROUP BY actor
+ORDER BY film_count DESC
+LIMIT 10;
 
 -- 2. Actors whose name starts with "A", sorted by last name
 SELECT first_name, last_name, last_update
