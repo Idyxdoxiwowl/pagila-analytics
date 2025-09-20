@@ -52,10 +52,6 @@ superset init
 # Run Superset
 superset run -p 8088
 ```
-It will look something like this
-
-![result](./db_terminal.png)
-![result](./superset_terminal.png)
 
 ### 2. Access
 Open in browser: http://localhost:8088
@@ -71,14 +67,6 @@ Pagila database schema used in this project:
 
 ## Python Script (main.py)
 We created a Python script to connect to the **Pagila** PostgreSQL database, run SQL queries, and print results.
-
-### Example output
-The script executes queries such as:
-- Top 10 actors (`SELECT * FROM actor LIMIT 10`)
-- Top 10 most active customers by rentals
-
-Console output:
-![result](./main_console.png)
 
 ### How to run
 
