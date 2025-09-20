@@ -62,62 +62,6 @@ Open in browser: http://localhost:8088
 
 Login with your admin credentials.
 
-### SQL Queries
-
-All analytical queries are saved in queries.sql
-.
-Examples:
-``` sql
--- Show first 10 actors
-SELECT * FROM actor LIMIT 10;
-```
-![result](./query_actor.png)
-
-``` sql
--- actors whose name starts with "A" sorted by last name
-SELECT first_name, last_name, last_update
-FROM actor
-WHERE first_name LIKE 'A%'
-ORDER BY last_name ASC;
-```
-![result](./where+orderby.png)
-
-``` sql
--- average, minimal, maximum rental rate by category
-SELECT 
-    c.name AS category,
-    AVG(f.rental_rate) AS avg_rate,
-    MIN(f.rental_rate) AS min_rate,
-    MAX(f.rental_rate) AS max_rate
-FROM film f
-JOIN film_category fc ON f.film_id = fc.film_id
-JOIN category c ON fc.category_id = c.category_id
-GROUP BY c.name
-ORDER BY avg_rate DESC;
-```
-![result](./groupby.png)
-
-``` sql
-SELECT c.name AS category, COUNT(fc.film_id) AS film_count
-FROM category c
-JOIN film_category fc ON c.category_id = fc.category_id
-GROUP BY c.name
-ORDER BY film_count DESC;
-```
-![result](./countcategory.png)
-![result](./countcategory_analytics.png)
-
-``` sql
----Total revenue per customer
-SELECT c.first_name || ' ' || c.last_name AS customer, SUM(p.amount) AS total_payment
-FROM customer c
-JOIN payment p ON c.customer_id = p.customer_id
-GROUP BY customer
-ORDER BY total_payment DESC
-LIMIT 10;
-```
-![result](./sixth.png)
-![result](./sixth_analytics.png)
 
 ### Database Schema (ERD)
 Pagila database schema used in this project:  
