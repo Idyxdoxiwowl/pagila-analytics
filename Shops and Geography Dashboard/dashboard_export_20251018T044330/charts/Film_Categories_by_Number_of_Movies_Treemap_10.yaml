@@ -1,0 +1,29 @@
+slice_name: Film Categories by Number of Movies (Treemap)
+description: null
+certified_by: null
+certification_details: null
+viz_type: treemap_v2
+params:
+  datasource: 10__table
+  viz_type: treemap_v2
+  groupby:
+  - category
+  - film
+  metric: count
+  row_limit: 100
+  sort_by_metric: true
+  adhoc_filters: []
+  color_scheme: supersetColors
+  show_labels: true
+  show_upper_labels: true
+  label_type: key_value
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":10,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["category","film"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"10__table","viz_type":"treemap_v2","groupby":["category","film"],"metric":"count","row_limit":100,"sort_by_metric":true,"adhoc_filters":[],"color_scheme":"supersetColors","show_labels":true,"show_upper_labels":true,"label_type":"key_value","number_format":"SMART_NUMBER","date_format":"smart_date","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: f69ec012-90b0-44e7-a5da-47182b8cd28a
+version: 1.0.0
+dataset_uuid: 2b92cf36-83d4-406a-9721-e4800da2171a

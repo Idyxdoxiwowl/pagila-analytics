@@ -1,0 +1,159 @@
+table_name: payment
+main_dttm_col: payment_date
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pagila
+schema: public
+sql: ''
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 640f6281-6edc-4bf8-9627-95ea3377a835
+metrics:
+- metric_name: growth_pct
+  verbose_name: Growth %
+  metric_type: null
+  expression: "(AVG(amount) - MIN(amount)) / NULLIF(MIN(amount), 0)\r\n"
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: median_amount
+  verbose_name: Median Payment
+  metric_type: null
+  expression: PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY amount)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: avg_amount
+  verbose_name: Average Payment
+  metric_type: null
+  expression: AVG(amount)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra:
+    warning_markdown: ''
+  warning_text: null
+columns:
+- column_name: payment_category
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "CASE\r\n    WHEN amount < 2 THEN 'Low Payment'\r\n    WHEN amount >=\
+    \ 2 AND amount < 5 THEN 'Medium Payment'\r\n    ELSE 'High Payment'\r\nEND\r\n"
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: payment_normalized
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: null
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: "(amount - (SELECT MIN(amount) FROM public.payment)) / ((SELECT MAX(amount)\
+    \ FROM public.payment) - (SELECT MIN(amount) FROM public.payment))\r\n"
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: payment_date
+  verbose_name: null
+  is_dttm: true
+  is_active: true
+  type: TIMESTAMP WITH TIME ZONE
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: amount
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: NUMERIC(5, 2)
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: rental_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: payment_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: staff_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+- column_name: customer_id
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: {}
+version: 1.0.0
+database_uuid: a4300012-1450-4a12-8d4a-329137596505

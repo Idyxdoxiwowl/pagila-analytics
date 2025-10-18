@@ -1,0 +1,17 @@
+database_name: Pagila DB
+sqlalchemy_uri: postgresql+psycopg2://postgres:XXXXXXXXXX@localhost:5432/pagila
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: true
+extra:
+  metadata_params: {}
+  engine_params: {}
+  metadata_cache_timeout: {}
+  schemas_allowed_for_file_upload: []
+impersonate_user: false
+uuid: a4300012-1450-4a12-8d4a-329137596505
+version: 1.0.0

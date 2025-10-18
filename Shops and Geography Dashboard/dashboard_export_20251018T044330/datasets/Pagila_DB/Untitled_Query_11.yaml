@@ -1,0 +1,70 @@
+table_name: Untitled Query 11
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pagila
+schema: public
+sql: "SELECT c.name AS category,\r\n       f.title AS film,\r\n       SUM(p.amount)\
+  \ AS revenue\r\nFROM payment p\r\nJOIN rental r ON p.rental_id = r.rental_id\r\n\
+  JOIN inventory i ON r.inventory_id = i.inventory_id\r\nJOIN film f ON i.film_id\
+  \ = f.film_id\r\nJOIN film_category fc ON f.film_id = fc.film_id\r\nJOIN category\
+  \ c ON fc.category_id = c.category_id\r\nGROUP BY c.name, f.title;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: c2a756d2-5606-44a1-82ce-04f54b396dcd
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: revenue
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: category
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: film
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: a4300012-1450-4a12-8d4a-329137596505

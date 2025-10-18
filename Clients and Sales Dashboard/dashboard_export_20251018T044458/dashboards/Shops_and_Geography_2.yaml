@@ -1,0 +1,159 @@
+dashboard_title: Shops and Geography
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 2d49a992-f67a-4881-a1c6-be2f1e1d3081
+position:
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-N-5FMUOB93
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Shops and Geography
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-N-5FMUOB93:
+    children:
+    - CHART-OHEDCZ2D
+    - CHART-3MHB9O3E
+    - CHART-WHEVS8UK
+    - CHART-3ZHYYK6J
+    - CHART-E4Z4NSHE
+    id: ROW-N-5FMUOB93
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    type: ROW
+    parents:
+    - ROOT_ID
+    - GRID_ID
+  CHART-OHEDCZ2D:
+    children: []
+    id: CHART-OHEDCZ2D
+    meta:
+      chartId: 6
+      height: 50
+      sliceName: Avg Rental Rate vs Duration by Category
+      uuid: cb6211da-5159-437f-9193-ba351ec329a5
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-5FMUOB93
+  CHART-3MHB9O3E:
+    children: []
+    id: CHART-3MHB9O3E
+    meta:
+      chartId: 16
+      height: 50
+      sliceName: Top 10 Countries by Average Payment
+      uuid: 4ac1ff48-f6c8-4fa9-b26c-37bfa046de73
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-5FMUOB93
+  CHART-WHEVS8UK:
+    children: []
+    id: CHART-WHEVS8UK
+    meta:
+      chartId: 7
+      height: 50
+      sliceName: .
+      uuid: fa2395be-d13b-413f-adf8-b8611062e935
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-5FMUOB93
+  CHART-3ZHYYK6J:
+    children: []
+    id: CHART-3ZHYYK6J
+    meta:
+      chartId: 8
+      height: 50
+      sliceName: Top Movie Categories
+      uuid: 37255e93-a80a-4434-a64d-eb2b18aaf13e
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-5FMUOB93
+  CHART-E4Z4NSHE:
+    children: []
+    id: CHART-E4Z4NSHE
+    meta:
+      chartId: 9
+      height: 50
+      sliceName: Geo
+      uuid: 1843e4b3-6c83-48b6-85ca-42c0beda8ffd
+      width: 4
+    type: CHART
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-N-5FMUOB93
+metadata:
+  label_colors: {}
+  chart_configuration: {}
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope: []
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  shared_label_colors: []
+  map_label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-3pvAbp23cLq_HF9_sHosA
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Country Filter
+    filterType: filter_select
+    targets:
+    - column:
+        name: category
+      datasetUuid: 2b92cf36-83d4-406a-9721-e4800da2171a
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 7
+      - 9
+      - 16
+    type: NATIVE_FILTER
+    description: ''
+version: 1.0.0

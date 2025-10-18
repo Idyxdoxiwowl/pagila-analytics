@@ -1,0 +1,56 @@
+table_name: Top 10 Actors by Number of Films
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pagila
+schema: public
+sql: "SELECT a.first_name || ' ' || a.last_name AS actor, COUNT(fa.film_id) AS film_count\r\
+  \nFROM actor a\r\nJOIN film_actor fa ON a.actor_id = fa.actor_id\r\nGROUP BY actor\r\
+  \nORDER BY film_count DESC\r\nLIMIT 10;"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 1b3c02cc-b1d9-4758-895d-43df702f1a32
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: film_count
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: actor
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: a4300012-1450-4a12-8d4a-329137596505

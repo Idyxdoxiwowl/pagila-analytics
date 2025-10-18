@@ -1,0 +1,52 @@
+slice_name: 'Payment Statistics: Average vs Median and Growth %'
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 1__table
+  viz_type: table
+  query_mode: aggregate
+  groupby:
+  - label: My column
+    sqlExpression: DATE_TRUNC('month', payment_date)
+    expressionType: SQL
+  time_grain_sqla: P1D
+  temporal_columns_lookup:
+    payment_date: true
+  metrics:
+  - growth_pct
+  - median_amount
+  - avg_amount
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    subject: payment_date
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_by_cols: []
+  order_desc: true
+  row_limit: 100
+  server_page_length: 10
+  show_totals: true
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 1
+query_context: '{"datasource":{"id":1,"type":"table"},"force":false,"queries":[{"filters":[{"col":"payment_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[{"label":"My
+  column","sqlExpression":"DATE_TRUNC(''month'', payment_date)","expressionType":"SQL"}],"metrics":["growth_pct","median_amount","avg_amount"],"orderby":[["growth_pct",false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]},{"filters":[{"col":"payment_date","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"time_grain_sqla":"P1D","having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":["growth_pct","median_amount","avg_amount"],"annotation_layers":[],"row_limit":0,"row_offset":0,"series_limit":0,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"1__table","viz_type":"table","query_mode":"aggregate","groupby":[{"label":"My
+  column","sqlExpression":"DATE_TRUNC(''month'', payment_date)","expressionType":"SQL"}],"time_grain_sqla":"P1D","temporal_columns_lookup":{"payment_date":true},"metrics":["growth_pct","median_amount","avg_amount"],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","subject":"payment_date","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_by_cols":[],"order_desc":true,"row_limit":100,"server_page_length":10,"show_totals":true,"table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[1],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: ce4a26e3-e63d-460d-a204-73f240ebd214
+version: 1.0.0
+dataset_uuid: 640f6281-6edc-4bf8-9627-95ea3377a835

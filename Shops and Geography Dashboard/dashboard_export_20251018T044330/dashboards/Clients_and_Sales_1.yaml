@@ -1,0 +1,728 @@
+dashboard_title: Clients and Sales
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 91939625-3346-4589-8925-e4ba8ab562a0
+position:
+  CHART-explore-1-1:
+    children: []
+    id: CHART-explore-1-1
+    meta:
+      chartId: 1
+      height: 50
+      sliceName: Revenue Share by Film Category
+      uuid: 29befa51-1b76-4651-82d4-0f9f0d6f5814
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-qmCnrce_WZ0YjRH0OS7-2
+    type: CHART
+  CHART-explore-10-1:
+    children: []
+    id: CHART-explore-10-1
+    meta:
+      chartId: 10
+      height: 50
+      sliceName: Film Categories by Number of Movies (Treemap)
+      uuid: f69ec012-90b0-44e7-a5da-47182b8cd28a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-zl0PxCR3_n3VJ0gQ5CemQ
+    type: CHART
+  CHART-explore-11-1:
+    children: []
+    id: CHART-explore-11-1
+    meta:
+      chartId: 11
+      height: 50
+      sliceName: Film Revenue Distribution by Category (Sunburst)
+      uuid: 43ba19ce-2576-4531-b1bf-b61657823322
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-zl0PxCR3_n3VJ0gQ5CemQ
+    type: CHART
+  CHART-explore-12-1:
+    children: []
+    id: CHART-explore-12-1
+    meta:
+      chartId: 12
+      height: 50
+      sliceName: Film Revenue Distribution Across Countries and Genres (Heatmap)
+      uuid: 2daf11ca-dfc2-4c50-b7bf-2156077e0eee
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-zl0PxCR3_n3VJ0gQ5CemQ
+    type: CHART
+  CHART-explore-13-1:
+    children: []
+    id: CHART-explore-13-1
+    meta:
+      chartId: 13
+      height: 50
+      sliceName: Payment Categorization (Low / Medium / High)
+      uuid: e403b5c1-c79f-48da-8c18-d8ab482c7ded
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Zob_iBk7CtN54ReoHhrp1
+    type: CHART
+  CHART-explore-15-1:
+    children: []
+    id: CHART-explore-15-1
+    meta:
+      chartId: 15
+      height: 50
+      sliceName: 'Payment Statistics: Average vs Median and Growth %'
+      uuid: ce4a26e3-e63d-460d-a204-73f240ebd214
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Zob_iBk7CtN54ReoHhrp1
+    type: CHART
+  CHART-explore-17-1:
+    children: []
+    id: CHART-explore-17-1
+    meta:
+      chartId: 17
+      height: 50
+      sliceName: 'Monthly Revenue Comparison: Database vs CSV'
+      uuid: 008bd195-5224-4f83-8b47-16fb100ef87a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ztOHMDzNWftvSh5E9Mef2
+    type: CHART
+  CHART-explore-18-1:
+    children: []
+    id: CHART-explore-18-1
+    meta:
+      chartId: 18
+      height: 50
+      sliceName: "Normalized Payment Distribution (0\u20131) ."
+      uuid: ca5b4f4d-839b-41a9-9047-b9a9032d1d0e
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-Zob_iBk7CtN54ReoHhrp1
+    type: CHART
+  CHART-explore-2-1:
+    children: []
+    id: CHART-explore-2-1
+    meta:
+      chartId: 2
+      height: 50
+      sliceName: bar
+      uuid: ab5fd9ac-5210-4caa-af4e-8056355ba81b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ztOHMDzNWftvSh5E9Mef2
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-ztOHMDzNWftvSh5E9Mef2
+    - ROW-zl0PxCR3_n3VJ0gQ5CemQ
+    - ROW-Zob_iBk7CtN54ReoHhrp1
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Clients and Sales
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-Zob_iBk7CtN54ReoHhrp1:
+    children:
+    - CHART-explore-13-1
+    - CHART-explore-15-1
+    - CHART-explore-18-1
+    id: ROW-Zob_iBk7CtN54ReoHhrp1
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-zl0PxCR3_n3VJ0gQ5CemQ:
+    children:
+    - CHART-explore-10-1
+    - CHART-explore-11-1
+    - CHART-explore-12-1
+    id: ROW-zl0PxCR3_n3VJ0gQ5CemQ
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-ztOHMDzNWftvSh5E9Mef2:
+    children:
+    - CHART-explore-2-1
+    - CHART-explore-17-1
+    - CHART-explore-1-1
+    id: ROW-ztOHMDzNWftvSh5E9Mef2
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  label_colors: {}
+  chart_configuration:
+    '1':
+      id: 1
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 2
+        - 10
+        - 11
+        - 12
+        - 13
+        - 15
+        - 17
+        - 18
+    '2':
+      id: 2
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 10
+        - 11
+        - 12
+        - 13
+        - 15
+        - 17
+        - 18
+    '10':
+      id: 10
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 11
+        - 12
+        - 13
+        - 15
+        - 17
+        - 18
+    '11':
+      id: 11
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 10
+        - 12
+        - 13
+        - 15
+        - 17
+        - 18
+    '13':
+      id: 13
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 10
+        - 11
+        - 12
+        - 15
+        - 17
+        - 18
+    '15':
+      id: 15
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 10
+        - 11
+        - 12
+        - 13
+        - 17
+        - 18
+    '17':
+      id: 17
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 1
+        - 2
+        - 10
+        - 11
+        - 12
+        - 13
+        - 15
+        - 18
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 1
+    - 2
+    - 10
+    - 11
+    - 12
+    - 13
+    - 15
+    - 17
+    - 18
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  shared_label_colors:
+  - Action
+  - Animation
+  - CADDYSHACK JEDI
+  - CANYON STOCK
+  - CLOSER BANG
+  - CREEPERS KANE
+  - CROW GREASE
+  - Children
+  - Classics
+  - Comedy
+  - DESIRE ALIEN
+  - DRIVING POLISH
+  - Documentary
+  - Drama
+  - ELEPHANT TROJAN
+  - ENCOUNTERS CURTAIN
+  - FEATHERS METAL
+  - FORREST SONS
+  - Family
+  - Foreign
+  - GROOVE FICTION
+  - Games
+  - Horror
+  - MIRACLE VIRTUAL
+  - Music
+  - NOTORIOUS REUNION
+  - New
+  - PREJUDICE OLEANDER
+  - SASSY PACKER
+  - Sci-Fi
+  - Sports
+  - Travel
+  map_label_colors:
+    Foreign: '#1FA8C9'
+    Children: '#454E7C'
+    Animation: '#5AC189'
+    Documentary: '#FF7F44'
+    Action: '#666666'
+    Music: '#E04355'
+    Sci-Fi: '#FCC700'
+    New: '#A868B7'
+    Sports: '#3CCCCB'
+    Games: '#A38F79'
+    Travel: '#8FD3E4'
+    Horror: '#A1A6BD'
+    Classics: '#ACE1C4'
+    Family: '#FEC0A1'
+    Drama: '#B2B2B2'
+    Comedy: '#EFA1AA'
+    count: '#1FA8C9'
+    HAPPINESS UNITED: '#454E7C'
+    HORN WORKING: '#5AC189'
+    STING PERSONAL: '#FF7F44'
+    RAGING AIRPLANE: '#666666'
+    DALMATIONS SWEDEN: '#E04355'
+    CREEPERS KANE: '#FCC700'
+    HALL CASSIDY: '#A868B7'
+    PATIENT SISTER: '#3CCCCB'
+    GROOVE FICTION: '#A38F79'
+    VOICE PEACH: '#A1A6BD'
+    SHAKESPEARE SADDLE: '#ACE1C4'
+    BLADE POLISH: '#FEC0A1'
+    FATAL HAUNTED: '#B2B2B2'
+    MODERN DORADO: '#EFA1AA'
+    MOURNING PURPLE: '#FDE380'
+    CLOCKWORK PARADISE: '#D3B3DA'
+    COMFORTS RUSH: '#9EE5E5'
+    DORADO NOTTING: '#D1C6BC'
+    CLOSER BANG: '#D1C6BC'
+    FIDELITY DEVIL: '#454E7C'
+    BABY HALL: '#5AC189'
+    ENCOUNTERS CURTAIN: '#FF7F44'
+    YOUTH KICK: '#666666'
+    RIVER OUTLAW: '#E04355'
+    SNATCH SLIPPER: '#A868B7'
+    TREATMENT JEKYLL: '#3CCCCB'
+    JERK PAYCHECK: '#A38F79'
+    INTRIGUE WORST: '#8FD3E4'
+    CADDYSHACK JEDI: '#A1A6BD'
+    STRAIGHT HOURS: '#FEC0A1'
+    HANKY OCTOBER: '#EFA1AA'
+    FLIGHT LIES: '#FDE380'
+    EVERYONE CRAFT: '#D3B3DA'
+    AGENT TRUMAN: '#9EE5E5'
+    DRIVING POLISH: '#EFA1AA'
+    FINDING ANACONDA: '#FDE380'
+    SANTA PARIS: '#D3B3DA'
+    SUNDANCE INVASION: '#9EE5E5'
+    BANG KWAI: '#D1C6BC'
+    PATTON INTERVIEW: '#454E7C'
+    BLANKET BEVERLY: '#5AC189'
+    MYSTIC TRUMAN: '#FF7F44'
+    LOVE SUICIDES: '#666666'
+    ROAD ROXANNE: '#E04355'
+    IMAGE PRINCESS: '#FCC700'
+    DOLLS RAGE: '#3CCCCB'
+    GOLD RIVER: '#A38F79'
+    JUGGLER HARDLY: '#8FD3E4'
+    SMILE EARRING: '#A1A6BD'
+    GILBERT PELICAN: '#ACE1C4'
+    DARKNESS WAR: '#FEC0A1'
+    MOB DUFFEL: '#B2B2B2'
+    FORREST SONS: '#FEC0A1'
+    DESIRE ALIEN: '#B2B2B2'
+    NOTORIOUS REUNION: '#454E7C'
+    ELEPHANT TROJAN: '#FDE380'
+    SCALAWAG DUCK: '#D3B3DA'
+    HEAVENLY GUN: '#9EE5E5'
+    CHICAGO NORTH: '#D1C6BC'
+    SCHOOL JACKET: '#FF7F44'
+    CROW GREASE: '#666666'
+    MOVIE SHAKESPEARE: '#FCC700'
+    PREJUDICE OLEANDER: '#A868B7'
+    GOLDFINGER SENSIBILITY: '#3CCCCB'
+    MAGNOLIA FORRESTER: '#A38F79'
+    CLUB GRAFFITI: '#8FD3E4'
+    EMPIRE MALKOVICH: '#A1A6BD'
+    PURPLE MOVIE: '#ACE1C4'
+    MIRACLE VIRTUAL: '#A38F79'
+    NECKLACE OUTBREAK: '#8FD3E4'
+    FANTASIA PARK: '#A1A6BD'
+    BULL SHAWSHANK: '#ACE1C4'
+    FEATHERS METAL: '#454E7C'
+    SASSY PACKER: '#B2B2B2'
+    LUCK OPUS: '#EFA1AA'
+    ALONE TRIP: '#FDE380'
+    PILOT HOOSIERS: '#D3B3DA'
+    COLOR PHILADELPHIA: '#9EE5E5'
+    LOVER TRUMAN: '#D1C6BC'
+    CASABLANCA SUPER: '#5AC189'
+    LESSON CLEOPATRA: '#666666'
+    DAISY MENAGERIE: '#E04355'
+    STAGE WORLD: '#FCC700'
+    CANDLES GRAPES: '#A868B7'
+    STREETCAR INTENTIONS: '#E04355'
+    DONNIE ALLEY: '#FCC700'
+    MODEL FISH: '#A868B7'
+    MADIGAN DORADO: '#3CCCCB'
+    HELLFIGHTERS SIERRA: '#454E7C'
+    BROTHERHOOD BLANKET: '#8FD3E4'
+    BOOGIE AMELIE: '#A1A6BD'
+    PATRIOT ROMAN: '#ACE1C4'
+    KRAMER CHOCOLATE: '#FEC0A1'
+    CANYON STOCK: '#B2B2B2'
+    NAME DETECTIVE: '#EFA1AA'
+    KNOCK WARLOCK: '#FDE380'
+    ARTIST COLDBLOODED: '#D3B3DA'
+    SUM(revenue): '#1FA8C9'
+    ACE GOLDFINGER: '#454E7C'
+    ADAPTATION HOLES: '#5AC189'
+    AIRPLANE SIERRA: '#FF7F44'
+    ALASKA PHANTOM: '#E04355'
+    ANGELS LIFE: '#FCC700'
+    ANYTHING SAVANNAH: '#A868B7'
+    ARIZONA BANG: '#3CCCCB'
+    BAKED CLEOPATRA: '#A38F79'
+    BANGER PINOCCHIO: '#8FD3E4'
+    BEDAZZLED MARRIED: '#A1A6BD'
+    BEHAVIOR RUNAWAY: '#ACE1C4'
+    BENEATH RUSH: '#FEC0A1'
+    BIRCH ANTITRUST: '#B2B2B2'
+    BIRDCAGE CASPER: '#EFA1AA'
+    BONNIE HOLOCAUST: '#FDE380'
+    BORN SPINAL: '#D3B3DA'
+    BRIDE INTRIGUE: '#9EE5E5'
+    BULWORTH COMMANDMENTS: '#D1C6BC'
+    CALIFORNIA BIRDS: '#9EE5E5'
+    CAMPUS REMEMBER: '#D1C6BC'
+    CAT CONEHEADS: '#454E7C'
+    CHILL LUCK: '#5AC189'
+    CLERKS ANGELS: '#FF7F44'
+    CLUE GRAIL: '#666666'
+    CLUELESS BUCKET: '#E04355'
+    CONQUERER NUTS: '#FCC700'
+    CORE SUIT: '#A868B7'
+    DARKO DORADO: '#3CCCCB'
+    DAUGHTER MADIGAN: '#A38F79'
+    DECEIVER BETRAYED: '#8FD3E4'
+    DETAILS PACKER: '#A1A6BD'
+    DETECTIVE VISION: '#ACE1C4'
+    DEVIL DESIRE: '#FEC0A1'
+    DINOSAUR SECRETARY: '#EFA1AA'
+    DISCIPLE MOTHER: '#FDE380'
+    DISTURBING SCARFACE: '#D3B3DA'
+    DIVORCE SHINING: '#FDE380'
+    DRIVER ANNIE: '#D3B3DA'
+    DRUMLINE CYCLONE: '#9EE5E5'
+    DRUMS DYNAMITE: '#454E7C'
+    DYING MAKER: '#5AC189'
+    EARRING INSTINCT: '#FF7F44'
+    ENTRAPMENT SATISFACTION: '#E04355'
+    FACTORY DRAGON: '#FCC700'
+    FERRIS MOTHER: '#A868B7'
+    FIRE WOLVES: '#3CCCCB'
+    FOOL MOCKINGBIRD: '#A38F79'
+    FREEDOM CLEOPATRA: '#8FD3E4'
+    FRISCO FORREST: '#A1A6BD'
+    FRONTIER CABIN: '#ACE1C4'
+    FUGITIVE MAGUIRE: '#FEC0A1'
+    GALAXY SWEETHEARTS: '#B2B2B2'
+    GAMES BOWFINGER: '#ACE1C4'
+    GATHERING CALENDAR: '#FEC0A1'
+    GOODFELLAS SALUTE: '#B2B2B2'
+    GUN BONNIE: '#EFA1AA'
+    HALF OUTFIELD: '#454E7C'
+    HARDLY ROBBERS: '#D3B3DA'
+    HARRY IDAHO: '#9EE5E5'
+    HEAD STRANGER: '#D1C6BC'
+    HOLOCAUST HIGHBALL: '#5AC189'
+    HONEY TIES: '#666666'
+    HOOK CHARIOTS: '#E04355'
+    HUMAN GRAFFITI: '#FCC700'
+    HUSTLER PARTY: '#A868B7'
+    IDENTITY LOVER: '#3CCCCB'
+    IDOLS SNATCHERS: '#8FD3E4'
+    IGBY MAKER: '#A1A6BD'
+    INCH JET: '#3CCCCB'
+    INSIDER ARIZONA: '#A38F79'
+    INSTINCT AIRPORT: '#8FD3E4'
+    IRON MOON: '#A1A6BD'
+    JEDI BENEATH: '#ACE1C4'
+    JERICHO MULAN: '#FEC0A1'
+    JET NEIGHBORS: '#B2B2B2'
+    JINGLE SAGEBRUSH: '#EFA1AA'
+    JUMPING WRATH: '#FDE380'
+    KISS GLORY: '#D3B3DA'
+    LABYRINTH LEAGUE: '#9EE5E5'
+    LEBOWSKI SOLDIERS: '#D1C6BC'
+    LIBERTY MAGNIFICENT: '#454E7C'
+    LIFE TWISTED: '#5AC189'
+    LOCK REAR: '#FF7F44'
+    LUST LOCK: '#666666'
+    MADNESS ATTACKS: '#E04355'
+    MADRE GABLES: '#FCC700'
+    MISSION ZOOLANDER: '#A868B7'
+    MIXED DOORS: '#A868B7'
+    MONEY HAROLD: '#3CCCCB'
+    MONSOON CAUSE: '#454E7C'
+    MONSTER SPARTACUS: '#8FD3E4'
+    MOONSHINE CABIN: '#A1A6BD'
+    NASH CHOCOLAT: '#ACE1C4'
+    NEIGHBORS CHARADE: '#FEC0A1'
+    OKLAHOMA JUMANJI: '#B2B2B2'
+    OTHERS SOUP: '#EFA1AA'
+    PARK CITIZEN: '#FDE380'
+    PITY BOUND: '#D3B3DA'
+    POTTER CONNECTICUT: '#9EE5E5'
+    RANDOM GO: '#D1C6BC'
+    RIGHT CRANES: '#5AC189'
+    ROBBERY BRIGHT: '#FF7F44'
+    RUSHMORE MERMAID: '#666666'
+    SEABISCUIT PUNK: '#E04355'
+    SEARCHERS WAIT: '#FCC700'
+    SHANE DARKNESS: '#E04355'
+    SHAWSHANK BUBBLE: '#FCC700'
+    SHEPHERD MIDSUMMER: '#454E7C'
+    SHOOTIST SUPERFLY: '#3CCCCB'
+    SLUMS DUCK: '#A38F79'
+    SOMETHING DUCK: '#8FD3E4'
+    SPIKING ELEMENT: '#A1A6BD'
+    STEERS ARMAGEDDON: '#ACE1C4'
+    STEPMOM DREAM: '#FEC0A1'
+    STOCK GLASS: '#B2B2B2'
+    TENENBAUMS COMMAND: '#EFA1AA'
+    TEQUILA PAST: '#FDE380'
+    THEORY MERMAID: '#D3B3DA'
+    THIN SAGEBRUSH: '#9EE5E5'
+    TIMBERLAND SKY: '#D1C6BC'
+    TITANIC BOONDOCK: '#5AC189'
+    TRAP GUYS: '#FF7F44'
+    TROOPERS METAL: '#666666'
+    UNDEFEATED DALMATIONS: '#FF7F44'
+    VACATION BOONDOCK: '#666666'
+    VANISHING ROCKY: '#E04355'
+    WARS PLUTO: '#FCC700'
+    WATERSHIP FRONTIER: '#A868B7'
+    WEEKEND PERSONAL: '#3CCCCB'
+    WHISPERER GIANT: '#A38F79'
+    WOMEN DORADO: '#8FD3E4'
+    WONDERLAND CHRISTMAS: '#A1A6BD'
+    ZHIVAGO CORE: '#ACE1C4'
+    AFRICAN EGG: '#FEC0A1'
+    ALLEY EVOLUTION: '#B2B2B2'
+    BIKINI BORROWERS: '#EFA1AA'
+    BIRD INDEPENDENCE: '#FDE380'
+    BLINDNESS GUN: '#D3B3DA'
+    BLOOD ARGONAUTS: '#9EE5E5'
+    BOILED DARES: '#D1C6BC'
+    BORROWERS BEDAZZLED: '#454E7C'
+    BRIGHT ENCOUNTERS: '#454E7C'
+    BROOKLYN DESERT: '#5AC189'
+    BUBBLE GROSSE: '#FF7F44'
+    CABIN FLASH: '#666666'
+    CALENDAR GUNFIGHT: '#E04355'
+    CAMELOT VACATION: '#FCC700'
+    CAROL TEXAS: '#A868B7'
+    CASUALTIES ENCINO: '#3CCCCB'
+    CENTER DINOSAUR: '#A38F79'
+    CHITTY LOCK: '#8FD3E4'
+    CLEOPATRA DEVIL: '#ACE1C4'
+    CONFIDENTIAL INTERVIEW: '#FEC0A1'
+    CONTACT ANONYMOUS: '#B2B2B2'
+    CONTROL ANTHEM: '#EFA1AA'
+    CONVERSATION DOWNHILL: '#FDE380'
+    COWBOY DOOM: '#D3B3DA'
+    DANCES NONE: '#9EE5E5'
+    DARES PLUTO: '#D1C6BC'
+    DATE SPEED: '#D1C6BC'
+    DESERT POSEIDON: '#454E7C'
+    DESPERATE TRAINSPOTTING: '#5AC189'
+    DOORS PRESIDENT: '#FF7F44'
+    DOWNHILL ENOUGH: '#666666'
+    DREAM PICKUP: '#E04355'
+    EGG IGBY: '#A868B7'
+    EGYPT TENENBAUMS: '#3CCCCB'
+    ELIZABETH SHANE: '#A38F79'
+    ENGLISH BULWORTH: '#8FD3E4'
+    EVE RESURRECTION: '#A1A6BD'
+    EXPENDABLE STALLION: '#ACE1C4'
+    FEVER EMPIRE: '#FEC0A1'
+    FIREBALL PHILADELPHIA: '#EFA1AA'
+    FLATLINERS KILLER: '#FDE380'
+    FRENCH HOLIDAY: '#D3B3DA'
+    GANDHI KWAI: '#9EE5E5'
+    GHOST GROUNDHOG: '#FDE380'
+    GILMORE BOILED: '#D3B3DA'
+    GORGEOUS BINGO: '#9EE5E5'
+    GRADUATE LORD: '#D1C6BC'
+    GREASE YOUTH: '#5AC189'
+    GRINCH MASSAGE: '#FF7F44'
+    GRIT CLOCKWORK: '#666666'
+    HALLOWEEN NUTS: '#E04355'
+    HEDWIG ALTER: '#FCC700'
+    HIGHBALL POTTER: '#A868B7'
+    HOMEWARD CIDER: '#3CCCCB'
+    HOTEL HAPPINESS: '#A38F79'
+    HOURS RAGE: '#8FD3E4'
+    HYSTERICAL GRAIL: '#A1A6BD'
+    INDEPENDENCE HOTEL: '#ACE1C4'
+    INNOCENT USUAL: '#B2B2B2'
+    INTENTIONS EMPIRE: '#EFA1AA'
+    JEEPERS WEDDING: '#FEC0A1'
+    JEKYLL FROGMEN: '#B2B2B2'
+    JUNGLE CLOSER: '#EFA1AA'
+    KWAI HOMEWARD: '#FDE380'
+    LADYBUGS ARMAGEDDON: '#D3B3DA'
+    LEAGUE HELLFIGHTERS: '#9EE5E5'
+    LEATHERNECKS DWARFS: '#D1C6BC'
+    LIAISONS SWEET: '#454E7C'
+    LOSE INCH: '#5AC189'
+    MADISON TRAP: '#FF7F44'
+    MAGUIRE APACHE: '#666666'
+    MAKER GABLES: '#E04355'
+    MALLRATS UNITED: '#FCC700'
+    MASK PEACH: '#A868B7'
+    MAUDE MOD: '#3CCCCB'
+    METROPOLIS COMA: '#A38F79'
+    MURDER ANTITRUST: '#8FD3E4'
+    MUSKETEERS WAIT: '#A1A6BD'
+    NEMO CAMPUS: '#ACE1C4'
+    NOON PAPI: '#ACE1C4'
+    NUTS TIES: '#FEC0A1'
+    OCTOBER SUBMARINE: '#B2B2B2'
+    OPEN AFRICAN: '#EFA1AA'
+    OPPOSITE NECKLACE: '#FDE380'
+    OSCAR GOLD: '#D3B3DA'
+    PARIS WEEKEND: '#9EE5E5'
+    PAST SUICIDES: '#D1C6BC'
+    RANGE MOONWALKER: '#5AC189'
+    REBEL AIRPORT: '#FF7F44'
+    RECORDS ZORRO: '#666666'
+    Medium Payment: '#1FA8C9'
+    High Payment: '#454E7C'
+    Low Payment: '#5AC189'
+    payment_normalized: '#1FA8C9'
+    SUM(film_count): '#1FA8C9'
+    SUM(db_revenue): '#1FA8C9'
+    SUM(csv_revenue): '#454E7C'
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-x0CW1qbJEEGnMCkxEyk7X
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Category Filter
+    filterType: filter_select
+    targets:
+    - column:
+        name: category
+      datasetUuid: 0053fa0a-94b4-4f62-b848-73eb7a4cd5d2
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    tabsInScope: []
+version: 1.0.0

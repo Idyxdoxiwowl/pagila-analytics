@@ -1,0 +1,27 @@
+slice_name: Top Movie Categories
+description: null
+certified_by: null
+certification_details: null
+viz_type: word_cloud
+params:
+  datasource: 8__table
+  viz_type: word_cloud
+  slice_id: 8
+  series: category
+  metric: count
+  adhoc_filters: []
+  row_limit: 50
+  sort_by_metric: true
+  size_from: 10
+  size_to: 70
+  rotation: square
+  color_scheme: supersetColors
+  extra_form_data: {}
+  dashboards:
+  - 3
+  - 2
+query_context: '{"datasource":{"id":8,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["category"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":50,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"8__table","viz_type":"word_cloud","slice_id":8,"series":"category","metric":"count","adhoc_filters":[],"row_limit":50,"sort_by_metric":true,"size_from":10,"size_to":70,"rotation":"square","color_scheme":"supersetColors","extra_form_data":{},"dashboards":[3,2],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 37255e93-a80a-4434-a64d-eb2b18aaf13e
+version: 1.0.0
+dataset_uuid: 0f28e9ec-dd3b-4d28-9b14-5f2815b91ab9
